@@ -1,0 +1,31 @@
+{
+  "name": "Local LM Studio",
+  "description": "Preset for local LM Studio with command R plus",
+  "spec": {
+    "endpoint": "http://localhost:1234/v1/chat/completions",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "model": "dranger003/c4ai-command-r-plus-iMat.GGUF",
+      "messages": [
+        {
+          "role": "system",
+          "content": "<systemPrompt>"
+        },
+        {
+          "role": "user",
+          "content": "<userPrompt>"
+        }
+      ],
+      "temperature": 0.7,
+      "max_tokens": -1,
+      "stream": false
+    },
+    "arguments": {
+      "text": "[\"choices\"][0][\"message\"][\"content\"]"
+    },
+    "contentType": "TEXT"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "originHash" : "897f6da3e5440c3f46ebd72a5591a9e567fd542508eee712dbf8a6cd2df957d2",
+  "pins" : [
+    {
+      "identity" : "swiftapiadapter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RayKitajima/SwiftApiAdapter",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6ada707f6fb52821b44da27c35a722eb2e4c5a9e"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup",
+      "state" : {
+        "revision" : "028487d4a8a291b2fe1b4392b5425b6172056148",
+        "version" : "2.7.2"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
+      "state" : {
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Local LLM Studio",
+  "description": "Set $endpoint and $model to suit your setup.",
+  "spec": {
+    "endpoint": "$endpoint",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "model": "$model",
+      "messages": [
+        {
+          "role": "system",
+          "content": "<systemPrompt>"
+        },
+        {
+          "role": "user",
+          "content": "<userPrompt>"
+        }
+      ],
+      "temperature": 0.7,
+      "max_tokens": -1,
+      "stream": false
+    },
+    "arguments": {
+      "text": "[\"choices\"][0][\"message\"][\"content\"]"
+    },
+    "contentType": "TEXT"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "OpenAI Dalle3 Template",
+  "description": "Set $API_KEY to your own key in the headers.",
+  "spec": {
+    "name": "OpenAI Dalle3",
+    "endpoint": "https://api.openai.com/v1/images/generations",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer $API_KEY"
+    },
+    "body": {
+      "model": "dall-e-2",
+      "prompt": "<positivePrompt>",
+      "n": 1,
+      "size": "1024x1024",
+      "response_format": "b64_json"
+    },
+    "arguments": {
+      "base64image": "[\"data\"][0][\"b64_json\"]"
+    },
+    "contentType": "BASE64_IMAGE"
+  }
+}
