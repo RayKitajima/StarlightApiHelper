@@ -86,18 +86,18 @@ Here are the steps:
 
 1. **Clone the repo:**
    ```sh
-   git clone https://github.com/RayKitajima/StarlightAPIHelper.git
-   cd StarlightAPIHelper
+   git clone https://github.com/RayKitajima/StarlightApiHelper.git
+   cd StarlightApiHelper
    ```
 
 2. **Create your configuration file:**
-   In the same folder that contains the `StarlightAPIHelper.xcconfig.template`, run this command:
+   In the same folder that contains the `StarlightApiHelper.xcconfig.template`, run this command:
    ```sh
-   cp StarlightAPIHelper.xcconfig.template StarlightAPIHelper.xcconfig
+   cp StarlightApiHelper.xcconfig.template StarlightApiHelper.xcconfig
    ```
 
 3. **Edit the configuration file:**
-   Open `StarlightAPIHelper.xcconfig` in your favorite text editor and fill in the `DEVELOPMENT_TEAM` and `BUNDLE_ID_PREFIX` values. 
+   Open `StarlightApiHelper.xcconfig` in your favorite text editor and fill in the `DEVELOPMENT_TEAM` and `BUNDLE_ID_PREFIX` values. 
 
    - `DEVELOPMENT_TEAM`: Your Apple Team ID (you can find this by logging into the Apple Developer Portal).
    - `BUNDLE_ID_PREFIX`: Your domain in reverse notation or whatever you use as the prefix for your projects (e.g., `com.example`).
@@ -109,13 +109,13 @@ Here are the steps:
    ```
 
 4. **Save your changes**:
-   Save the changes to `StarlightAPIHelper.xcconfig`.
+   Save the changes to `StarlightApiHelper.xcconfig`.
 
 5. **Open the project in Xcode**:
-   Open `StarlightAPIHelper.xcodeproj` in Xcode.
+   Open `StarlightApiHelper.xcodeproj` in Xcode.
 
 6. **Build the project**:
-   Select the target StarlightAPIHelper and build it using the configured settings.
+   Select the target StarlightApiHelper and build it using the configured settings.
 
 By following these steps, you should be able to compile the project without any issues. If you encounter any problems, please refer to the troubleshooting section or contact the project maintainers.
 
