@@ -20,7 +20,8 @@
           "content": "<userPrompt>"
         }
       ],
-      "temperature": 0.7
+      "temperature": 0.7,
+      "extraData": {"maxTokens": 4096, "maxRequestTokens": 2048}
     },
     "arguments": {
       "text": "[\"choices\"][0][\"message\"][\"content\"]"
