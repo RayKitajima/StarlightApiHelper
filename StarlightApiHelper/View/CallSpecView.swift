@@ -32,6 +32,7 @@ struct CallSpecView: View {
     @State private var base64String: String = ""
     @State private var image: Image? = nil
     @State private var finalUrl: String = ""
+    @State private var ogImageUrl: String = ""
 
     var body: some View {
         Form {
@@ -142,6 +143,32 @@ struct CallSpecView: View {
                         Text("None.")
                             .padding(.leading, 10)
                             .foregroundColor(.secondary)
+                    }
+                }
+            }
+
+            if !ogImageUrl.isEmpty {
+                if let imageURL = URL(string: ogImageUrl) {
+                    Section(
+                        header: Text("OpenGraph Image")
+                    ) {
+                        AsyncImage(url: imageURL) { phase in
+                            switch phase {
+                            case .empty:
+                                ProgressView()
+                            case .success(let image):
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                            case .failure:
+                                Image(systemName: "photo")
+                                    .resizable()
+                                    .scaledToFit()
+                            @unknown default:
+                                EmptyView()
+                            }
+                        }
+                        .frame(width: 200, height: 200)
                     }
                 }
             }
@@ -311,8 +338,9 @@ struct CallSpecView: View {
                     case .page:
                         print("finalUrl: \(contentRack.arguments["finalUrl"] ?? "")")
                         self.generatedText = contentRack.arguments["content"] ?? ""
-                        self.image = nil
                         self.finalUrl = contentRack.arguments["finalUrl"] ?? endpoint
+                        self.image = nil
+                        self.ogImageUrl = contentRack.arguments["ogimage"] ?? ""
                     }
                     print("Success to load.")
                 } else {

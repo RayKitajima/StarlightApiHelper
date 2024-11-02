@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		691FA8E92CD5BB6800BC4BC0 /* SwiftApiAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 691FA8E82CD5BB6800BC4BC0 /* SwiftApiAdapter */; };
 		691FA8EC2CD60E7A00BC4BC0 /* SwiftApiAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 691FA8EB2CD60E7A00BC4BC0 /* SwiftApiAdapter */; };
-		691FA8EF2CD60EA500BC4BC0 /* SwiftApiAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 691FA8EE2CD60EA500BC4BC0 /* SwiftApiAdapter */; };
+		691FA8F22CD6101B00BC4BC0 /* SwiftApiAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 691FA8F12CD6101B00BC4BC0 /* SwiftApiAdapter */; };
+		691FA8F52CD6105900BC4BC0 /* SwiftApiAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 691FA8F42CD6105900BC4BC0 /* SwiftApiAdapter */; };
+		691FA8F82CD61C7B00BC4BC0 /* SwiftApiAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 691FA8F72CD61C7B00BC4BC0 /* SwiftApiAdapter */; };
 		696E77912BE1FB7C00FF2D45 /* CreateSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E77902BE1FB7C00FF2D45 /* CreateSpecView.swift */; };
 		696E77932BE236CF00FF2D45 /* JsonDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E77922BE236CF00FF2D45 /* JsonDocument.swift */; };
 		696E77952BE237BF00FF2D45 /* ApiContentJSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E77942BE237BF00FF2D45 /* ApiContentJSONManager.swift */; };
@@ -51,7 +53,9 @@
 				691FA8EC2CD60E7A00BC4BC0 /* SwiftApiAdapter in Frameworks */,
 				69962ED62BDF5F67002FEB44 /* SwiftApiAdapter in Frameworks */,
 				691FA8E92CD5BB6800BC4BC0 /* SwiftApiAdapter in Frameworks */,
-				691FA8EF2CD60EA500BC4BC0 /* SwiftApiAdapter in Frameworks */,
+				691FA8F82CD61C7B00BC4BC0 /* SwiftApiAdapter in Frameworks */,
+				691FA8F22CD6101B00BC4BC0 /* SwiftApiAdapter in Frameworks */,
+				691FA8F52CD6105900BC4BC0 /* SwiftApiAdapter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +145,9 @@
 				69962ED52BDF5F67002FEB44 /* SwiftApiAdapter */,
 				691FA8E82CD5BB6800BC4BC0 /* SwiftApiAdapter */,
 				691FA8EB2CD60E7A00BC4BC0 /* SwiftApiAdapter */,
-				691FA8EE2CD60EA500BC4BC0 /* SwiftApiAdapter */,
+				691FA8F12CD6101B00BC4BC0 /* SwiftApiAdapter */,
+				691FA8F42CD6105900BC4BC0 /* SwiftApiAdapter */,
+				691FA8F72CD61C7B00BC4BC0 /* SwiftApiAdapter */,
 			);
 			productName = SwiftApiAdaptorExampleUI;
 			productReference = 69DE858B2BDF340F00974945 /* Starlight API Helper.app */;
@@ -172,7 +178,7 @@
 			);
 			mainGroup = 69DE85822BDF340F00974945;
 			packageReferences = (
-				691FA8ED2CD60EA500BC4BC0 /* XCRemoteSwiftPackageReference "SwiftApiAdapter" */,
+				691FA8F62CD61C7B00BC4BC0 /* XCRemoteSwiftPackageReference "SwiftApiAdapter" */,
 			);
 			productRefGroup = 69DE858C2BDF340F00974945 /* Products */;
 			projectDirPath = "";
@@ -452,7 +458,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		691FA8ED2CD60EA500BC4BC0 /* XCRemoteSwiftPackageReference "SwiftApiAdapter" */ = {
+		691FA8F62CD61C7B00BC4BC0 /* XCRemoteSwiftPackageReference "SwiftApiAdapter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RayKitajima/SwiftApiAdapter";
 			requirement = {
@@ -471,9 +477,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftApiAdapter;
 		};
-		691FA8EE2CD60EA500BC4BC0 /* SwiftApiAdapter */ = {
+		691FA8F12CD6101B00BC4BC0 /* SwiftApiAdapter */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 691FA8ED2CD60EA500BC4BC0 /* XCRemoteSwiftPackageReference "SwiftApiAdapter" */;
+			productName = SwiftApiAdapter;
+		};
+		691FA8F42CD6105900BC4BC0 /* SwiftApiAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftApiAdapter;
+		};
+		691FA8F72CD61C7B00BC4BC0 /* SwiftApiAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 691FA8F62CD61C7B00BC4BC0 /* XCRemoteSwiftPackageReference "SwiftApiAdapter" */;
 			productName = SwiftApiAdapter;
 		};
 		69962ED52BDF5F67002FEB44 /* SwiftApiAdapter */ = {
