@@ -7,7 +7,7 @@
       "location" : "https://github.com/RayKitajima/SwiftApiAdapter",
       "state" : {
         "branch" : "main",
-        "revision" : "6ada707f6fb52821b44da27c35a722eb2e4c5a9e"
+        "revision" : "f2102e67c08cd8b2f8af1fba9ad668ceffbf0051"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup",
       "state" : {
-        "revision" : "028487d4a8a291b2fe1b4392b5425b6172056148",
-        "version" : "2.7.2"
+        "revision" : "3c2c7e1e72b8abd96eafbae80323c5c1e5317437",
+        "version" : "2.7.5"
       }
     },
     {

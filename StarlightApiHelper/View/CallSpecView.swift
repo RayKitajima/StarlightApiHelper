@@ -31,6 +31,7 @@ struct CallSpecView: View {
     @State private var generatedText: String = ""
     @State private var base64String: String = ""
     @State private var image: Image? = nil
+    @State private var finalUrl: String = ""
 
     var body: some View {
         Form {
@@ -137,6 +138,26 @@ struct CallSpecView: View {
                         .border(Color.gray, width: 1)
                         .padding(.horizontal)
                         .padding(.bottom)
+                    } else {
+                        Text("None.")
+                            .padding(.leading, 10)
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+
+            Section(
+                header: Text("finalUrl")
+            ) {
+                Group {
+                    if (!finalUrl.isEmpty) {
+                        Text(finalUrl)
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                            .border(Color.gray, width: 1)
+                            .padding(.horizontal)
+                            .padding(.bottom)
                     } else {
                         Text("None.")
                             .padding(.leading, 10)
@@ -287,6 +308,11 @@ struct CallSpecView: View {
                         // not yet supported
                         print("URL_IMAGE is not yet supported")
                         break
+                    case .page:
+                        print("finalUrl: \(contentRack.arguments["finalUrl"] ?? "")")
+                        self.generatedText = contentRack.arguments["content"] ?? ""
+                        self.image = nil
+                        self.finalUrl = contentRack.arguments["finalUrl"] ?? endpoint
                     }
                     print("Success to load.")
                 } else {

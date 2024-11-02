@@ -1,0 +1,17 @@
+{
+  "name": "Wikipedia random article",
+  "description": "Wikipedia random article",
+  "spec": {
+    "endpoint": "https://en.m.wikipedia.org/wiki/Special:Random",
+    "method": "GET",
+    "headers": {},
+    "body": "",
+    "arguments": {},
+    "contentType": "PAGE",
+    "description": "This is a sample page content definition for your reference when loading your original content.",
+    "extraData": {
+      "summarize": ["content"],
+      "lang": { "code": "en", "language": "english" }
+    }
+  }
+}
