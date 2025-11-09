@@ -1,0 +1,19 @@
+{
+  "name": "Image Playground",
+  "description": "Uses Apple’s on‑device Image Playground",
+  "spec": {
+    "name": "Image Playground",
+    "endpoint": "imageplayground://local",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "limit": 1,
+      "prompt": "<positivePrompt>",
+      "style": "illustration"
+    },
+    "arguments": {},
+    "contentType": "BASE64_IMAGE"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Foundation Models",
+  "description": "Uses Apple’s on‑device Foundation Models LLM",
+  "spec": {
+    "endpoint": "foundationmodels://generate",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "instructions": "<systemPrompt>",
+      "prompt":"<userPrompt>",
+      "temperature": 0.7,
+      "max_tokens": 4096,
+      "stream": false
+    },
+    "arguments": {},
+    "contentType": "TEXT"
+  }
+}
