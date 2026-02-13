@@ -1,3 +1,5 @@
+Outdate. See [SwiftApiLab](https://github.com/RayKitajima/SwiftApiLab)
+
 # User Guide for StarlightApiHelper
 
 Welcome to the StarlightApiHelper! 
